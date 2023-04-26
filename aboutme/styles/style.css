@@ -1,0 +1,99 @@
+
+body{
+    
+    background-color: powderblue;
+    
+}
+.all{
+    color:cornflowerblue;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.title {
+    font-size: xx-large;
+    text-align: center;
+    font-weight:bolder;
+    margin: 50px;
+}
+.info{
+    font-size: x-large;
+}
+
+.pagetitle{
+    text-align: center;
+    position: relative;
+}
+
+
+/*  NAVIGATION BAR */
+.topnnav{
+background-color: beige;
+padding: 15px;
+display: flex;
+font-size: x-large;
+color: black;
+position: fixed;
+height: 10%;
+width: 100%;
+top: 0%;
+left: 0%;
+}
+.emailus{
+
+    position: fixed;
+    bottom: 0%;
+    padding: 0;
+
+}
+.home{
+
+    padding: 15px;
+    
+}
+.page1 {
+   
+    padding: 15px;
+
+    
+}
+.page2 {
+    padding: 15px;
+}
+.page3{
+    padding: 15px;
+    
+}
+
+
+
+
+/* LINKS */
+a:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+
+a:link, a:visited {
+        background-color: whitesmoke;
+        color: black;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+a:hover, a:active {
+        background-color: white;
+      }
+
+
+
+      
+/* OTHER */
+.test{
+    color: black;
+    text-align: center;
+}
