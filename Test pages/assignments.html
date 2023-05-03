@@ -20,29 +20,29 @@
             <input type="checkbox" id="task2" name="task2" value="Car">
             <label for="vehicle2"> Video: Logical Reasoning</label><br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <input type="checkbox" id="task3" name="vehicle3" value="Boat">
             <label for="vehicle3"> Quiz, May 4th, logical reasoning</label><br>
 
-            <input type="checkbox" id="task1" name="task1" value="">
+            <input type="checkbox" id="task4" name="task1" value="">
             <label for="vehicle1"> Discussion: Scriptural Conditional Statements</label><br>
 
-            <input type="checkbox" id="task2" name="task2" value="Car">
+            <input type="checkbox" id="task5" name="task2" value="Car">
             <label for="vehicle2"> Homework, Mobius
                 <a href="https://byui.mobius.cloud/lti/advantage">Link</a>
             </label> <br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <input type="checkbox" id="task 6" name="vehicle3" value="Boat">
             <label for="vehicle3">Group Problem solving</label> <br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <input type="checkbox" id="task7" name="vehicle3" value="Boat">
             <label for="vehicle3">Group quiz</label> <br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <input type="checkbox" id="task8" name="vehicle3" value="Boat">
             <label for="vehicle3">Homework 3b
                 <a href="https://byui.mobius.cloud/lti/advantage">Link 3b</a>
             </label> <br>
 
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <input type="checkbox" id="task9" name="vehicle3" value="Boat">
             <label for="vehicle3">Reminder for Discussion</label> <br>
 
             <h2> Writing</h2>
@@ -50,5 +50,51 @@
        
 
     </ul>
+    <form>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox" />
+        <label for="myCheckbox">Check me!</label>
+      </form>
+    <script>
+      // Check if the checkbox state is stored in a cookie
+      const checkboxState = getCookie('myCheckboxState');
+
+      if (checkboxState === 'true') {
+        // Set the checkbox as checked if the cookie value is 'true'
+        document.getElementById('myCheckbox').checked = true;
+      }
+
+      // Listen for changes to the checkbox state
+      document.getElementById('myCheckbox').addEventListener('change', function() {
+        // Store the checkbox state in a cookie
+        document.cookie = 'myCheckboxState=' + this.checked;
+      });
+
+      // Function to get a cookie by name
+      function getCookie(name) {
+        const cookies = document.cookie.split(';');
+
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].trim();
+
+          if (cookie.startsWith(name + '=')) {
+            return cookie.substring(name.length + 1);
+          }
+        }
+
+        return null;
+      }
+    </script>
+  </body>
+</html>
+In this example, we're using the document.cookie API to store the checkbox state in a cookie called myCheckboxState. When the page loads, we check if the cookie value is true and set the checkbox's checked attribute accordingly. We also listen for changes to the checkbox state and update the cookie value accordingly.
+
+Note that this is just one way to keep a checkbox checked after a page refresh using cookies. You could also use local storage or session storage to achieve the same effect.
+
+
+
+
+
+
+
 </body>
 </html>
