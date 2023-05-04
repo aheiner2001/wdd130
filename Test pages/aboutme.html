@@ -1,32 +1,196 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
+
+
+
+
+
+	<!-- My css  -->
 	<title>My Grid Layout</title>
 	<style>
 		.grid-container {
+			
 			display: grid;
-			grid-template-columns: repeat(3, 1fr); /* three columns with equal width */
-			grid-gap: 10px; /* gap between grid items */
-            border: 1px solid black;
-		}
+			grid-template-columns: repeat(4, 1fr); /* three columns with equal width */
+			grid-template-rows: repeat(4,1fr);
+			grid-gap: 0px; /* gap between grid items */
+        
+			position: fixed;
+ 		 	top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
 
+			
+		}
+		
+.grid-item:hover{
+	background-color:white;
+	
+}
+
+.grid-item:active{
+	background-color: black;
+}
 		.grid-item {
 			background-color: #ddd;
 			padding: 20px;
 			text-align: center;
 			font-size: 30px;
-            border: 1px solid red;
+			height:50px;
+			width:50px;
+            
+		}
+
+		.red{
+			background-color: red;
+		}
+		.blue{
+			background-color: blue;
+			grid-row: 4;
+		}
+
+		.green{
+			background-color:green;
+			
+		}
+		.purple{
+			background-color:purple;
+			grid-row:1;
+
+		}
+		.pink{
+			background-color:pink;
+			grid-row:2;
+
+		}
+		.black{
+			background-color:palegreen;
+			grid-row: 2;
+		}
+		.yellow{
+			background-color:yellow;
+			grid-row:2;
+		}
+		.babyblue{
+			background-color:turquoise;
+			grid-row: 3;
+		}
+		.gray{
+			background-color: gray;
+			grid-row: 3;
+
+		}
+		.slam{
+background-color: bisque;
+		}
+		audio{
+			display: none;
 		}
 	</style>
+
+
+
+
+
+
+
+
 </head>
 <body>
+
+	<!-- audio files -->
+	<audio src="/extra/website/Aaron A another start copy.mp3"></audio>
+	<audio src="/extra/website/Aaron- Little Jazz - 8_6_17, 9.28 PM copy.mp3"></audio>
+	<audio src="/extra/website/Aaron- Shuttler copy.mp3"></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+	<audio src=""></audio>
+
+<!-- the grid elements -->
 	<div class="grid-container">
-		<div class="grid-item">1</div>
-		<div class="grid-item">2</div>
-		<div class="grid-item">3</div>
-		<div class="grid-item">4</div>
-		<div class="grid-item">5</div>
-		<div class="grid-item">6</div>
+		<div class ="grid-item red" onclick="playSound1()"></div>
+		<div class="grid-item slam" onclick="playSound2()"></div>
+		<div class="grid-item blue" onclick="playSound3()"></div>
+		<div class="grid-item green" onclick="playSound4()"></div>
+		<div class="grid-item purple" onclick="playSound5()"></div>
+		<div class="grid-item pink" onclick="playSound6()"></div>
+		<div class="grid-item black" onclick="playSound7()"></div>
+		<div class="grid-item yellow" onclick="playSound8()"></div>
+		<div class="grid-item babyblue" onclick="playSound9()"></div>
+		<div class="grid-item gray" onclick="playSound10()"></div>
+		
+		
 	</div>
+
+	
+
+
+	
+<button onclick="stopMusic()">Stop Music</button>
+
+<script>
+  var audio = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio2 = new Audio('/extra/website/Aaron- Little Jazz - 8_6_17, 9.28 PM copy.mp3');
+  var audio3 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio4 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio5 = new Audio('/extra/website/Aaron- Shuttler copy.mp3');
+  var audio6 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio7 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio8 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio9 = new Audio('/extra/website/Aaron A another start copy.mp3');
+  var audio10 = new Audio('/extra/website/Aaron A another start copy.mp3');
+
+  function playSound1() {
+    audio.play();
+  }
+  function playSound2() {
+    audio2.play();
+  }
+
+  function playSound5() {
+    audio5.play();
+  }
+
+  function stopMusic() {
+    audio.pause();
+    audio.currentTime = 0;
+
+	audio2.pause();
+    audio2.currentTime = 0;
+
+	audio3.pause();
+    audio3.currentTime = 0;
+
+	audio4.pause();
+    audio4.currentTime = 0;
+	
+	audio5.pause();
+    audio5.currentTime = 0;
+	audio6.pause();
+    audio6.currentTime = 0;
+	audio7.pause();
+    audio7.currentTime = 0;
+	audio8.pause();
+    audio8.currentTime = 0;
+
+	audio9.pause();
+    audio9.currentTime = 0;
+
+	audio10.pause();
+    audio10.currentTime = 0;
+  }
+</script>
+
+
+
+	
+
+
+
 </body>
-</html>
+</html> 

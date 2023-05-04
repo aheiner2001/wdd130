@@ -16,8 +16,12 @@ nav {
     background-color:coral;
     line-height: 3em;
     text-align: center;
+    
     font-size: 1.2em;
-font-family:Roboto, Helvetica, sans-serif;
+    font-family:Roboto, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+ 
 }
 label{
   font-family:Roboto, Helvetica, sans-serif;
@@ -28,7 +32,7 @@ nav {
   }
   nav a {
     padding:1em;
-    min-width: 120px;
+    min-width: 200px;
     text-decoration: none;
     padding: 10px;
   }
@@ -38,4 +42,6 @@ nav {
   nav a:hover {
     color: white;
     background-color: green;
+  }
 
+  
