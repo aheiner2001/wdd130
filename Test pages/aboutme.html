@@ -9,6 +9,43 @@
 	<!-- My css  -->
 	<title>My Grid Layout</title>
 	<style>
+		.container{
+			display: flex;
+			border: solid black;
+			height: 100vh;
+			justify-content: center;
+			flex-wrap: wrap;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr ;
+		}
+		.grid-container2{
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-template-columns: 1fr 1fr 1fr;
+			position: absolute;
+			grid-column: 3;
+			border: solid green 5px;
+			
+			
+			
+		}
+		.displaygrid{
+			border: blue solid;
+			
+
+		
+		}
+		.grid-iten{
+			height: 100%;
+			width: 100%;
+			background-color: #ddd;
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+		
+			border: solid red;
+		}
+		
 		.grid-container {
 			
 			display: grid;
@@ -16,12 +53,12 @@
 			grid-template-rows: repeat(4,1fr);
 			grid-gap: 0px; /* gap between grid items */
         
-			position: fixed;
+			position: absolute;
  		 	top: 50%;
   			left: 50%;
   			transform: translate(-50%, -50%);
 
-			
+		 border: solid black;
 		}
 		
 .grid-item:hover{
@@ -32,13 +69,15 @@
 .grid-item:active{
 	background-color: black;
 }
-		.grid-item {
+
+.grid-item {
 			background-color: #ddd;
 			padding: 20px;
 			text-align: center;
 			font-size: 30px;
 			height:50px;
 			width:50px;
+			border: solid red;
             
 		}
 
@@ -112,7 +151,29 @@ background-color: bisque;
 	<audio src=""></audio>
 
 <!-- the grid elements -->
+<div class="container">
+	<div class="displaygrid"></div>
+	<div class="displaygrid"></div>
+	<div class="displaygrid"></div>
+	<div class="displaygrid"></div>
+	<div class="displaygrid"></div>
+	<div class="displaygrid"></div>
+	
+
 	<div class="grid-container">
+		<div class="grid-container2">
+			<div class ="grid-iten rubixface1" onclick="playSound1()"></div>
+			<div class="grid-iten rubixface2" onclick="playSound2()"></div>
+			<div class="grid-iten rubixface3" onclick="playSound3()"></div>
+			<div class="grid-iten rubixface4" onclick="playSound4()"></div>
+			<div class="grid-iten rubixface5" onclick="playSound5()"></div>
+			<div class="grid-iten rubixface6" onclick="playSound6()"></div>
+			<div class="grid-iten rubixface7" onclick="playSound7()"></div>
+			<div class="grid-iten rubixface8" onclick="playSound8()"></div>
+			<div class="grid-iten rubixface9" onclick="playSound9()"></div>
+		</div>
+	
+
 		<div class ="grid-item red" onclick="playSound1()"></div>
 		<div class="grid-item slam" onclick="playSound2()"></div>
 		<div class="grid-item blue" onclick="playSound3()"></div>
@@ -124,9 +185,11 @@ background-color: bisque;
 		<div class="grid-item babyblue" onclick="playSound9()"></div>
 		<div class="grid-item gray" onclick="playSound10()"></div>
 		
-		
 	</div>
 
+	
+</div>
+	
 	
 
 
