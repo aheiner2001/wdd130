@@ -5,8 +5,9 @@ body {
 
     text-align: center;
     padding: 4em;
-   max-width:960px;
+   max-width:100%;
    margin: 0 auto;
+  
 }
 h1,h2{
 font-family:"Castoro Titling";
@@ -15,12 +16,17 @@ font-family:"Castoro Titling";
 nav {
     background-color:coral;
     line-height: 3em;
+    position: relative;
+    margin: 0 auto;
     text-align: center;
-    
     font-size: 1.2em;
     font-family:Roboto, Helvetica, sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    border: beige solid 5px;
+    width: fit-content;
+    height: 100px;
+    top: 0;
  
 }
 label{
@@ -29,19 +35,23 @@ label{
 nav {
     list-style-type: none;
     display: flex;
+    
   }
   nav a {
     padding:1em;
     min-width: 200px;
     text-decoration: none;
     padding: 10px;
+   
   }
   nav a:link, nav a:visited {
     color: rgb(30, 30, 89);
+
 }
   nav a:hover {
     color: white;
     background-color: green;
+    border: whitesmoke solid 1px;
   }
 
   

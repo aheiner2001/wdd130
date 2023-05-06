@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Budget Tracker</title>
+  </head>
+  <body>
+    <style>
+body{
+    padding: 0;
+ background-color: rgb(31, 31, 92);
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+        .link_excel{
+            
+            padding: 30px;
+            background-color: beige;
+            border: black solid;
+            position: absolute;
+            text-align: center;
+            left: 42.5%;
+        }
+        a:hover{
+            background-color: bisque;
+        }
+
+        .othertext{
+            position: relative;
+            top: 30px;
+            background-color: white;
+            width: 50%;
+            left:25%;
+        top: 100px;
+           border: whitesmoke 5px solid;
+           text-align: center;
+           border-radius: 25%;
+           
+        }
+
+
+
+    </style>
+<header>
+    <h1>Budget Tracker</h1>
+    <a class="link_excel" href="https://docs.google.com/spreadsheets/d/1Wth3jDIFVmPqE4Ov1JOJZsdjsdv-Mm1uRlsRvw9OaH4/edit#gid=0">Link to excel Excel Sheet</a>
+    
+
+</header>
+ 
+<div class="othertext">
+    <label for="income">Monthly Income:</label>
+    <input type="number" id="income" name="income"><br><br>
+    <label for="expenses">Monthly Expenses:</label>
+    <input type="number" id="expenses" name="expenses"><br><br>
+    <button onclick="calculateBudget()">Calculate remaining money</button>
+    <p id="budget"></p>
+</div>
+   
+
+
+    
+    <script>
+      // Load data from local storage
+      let income = localStorage.getItem('income');
+      let expenses = localStorage.getItem('expenses');
+      // Set default values if no data exists
+      if (!income) {
+        income = 0;
+      }
+      if (!expenses) {
+        expenses = 0;
+      }
+      // Update the input fields with the loaded data
+      document.getElementById('income').value = income;
+      document.getElementById('expenses').value = expenses;
+      // Calculate the budget and display the result
+      function calculateBudget() {
+        income = document.getElementById('income').value;
+        expenses = document.getElementById('expenses').value;
+        let budget = income - expenses;
+        document.getElementById('budget').innerHTML = 'Your remaining monies is $' + budget.toFixed(2) + '.';
+        // Save the data to local storage
+        localStorage.setItem('income', income);
+        localStorage.setItem('expenses', expenses);
+        alert('Data saved!');
+
+        
+      }
+    </script>
+  </body>
+</html>

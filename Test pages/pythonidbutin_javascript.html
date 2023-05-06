@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meal cost</h1>
+    <label for="mealk">Cost of kid's meal: $</label>
+    <input type="number" id="meal_kid" name="meal_kid"><br><br>
+    <label for="meala">Cost of adult meal: $</label>
+    <input type="number" id="meal_adult" name="meal_adult"><br><br>
+
+    <label for="numchild">Number of children: </label>
+    <input type="number" id="num_kid" name="meal_kid"><br><br>
+    <label for="expenses">Number of adults: </label>
+    <input type="number" id="num_adult" name="meal_adult"><br><br>
+    
+    <button onclick="calculateBudget()">Calculate meal cost</button>
+    <p id="budget"></p>
+
+<script>
+    let meal_kid = localStorage.getItem('meal_kid');
+    let meal_adult = localStorage.getItem('meal_adult');
+
+    if (!meal_kid) {
+        meal_kid = 0;
+      }
+      if (!meal_adult) {
+        meal_adult = 0;
+      }
+      let budget = meal_kid - meal_adult;
+
+      function calculateBudget() {
+    // Get the values of the input fields The calculateBudget() function 
+    // is called when the button is clicked. This function retrieves the values of the 
+    // input fields using the document.getElementById().value syntax and converts them 
+    // to numbers using the Number() method. These values are then used to calculate the 
+    // total cost of meals and budget, which are stored in the total_meal_cost and budget variables.
+
+    const meal_kid = Number(document.getElementById("meal_kid").value);
+    const meal_adult = Number(document.getElementById("meal_adult").value);
+    const num_kid = Number(document.getElementById("num_kid").value);
+    const num_adult = Number(document.getElementById("num_adult").value);
+
+    // Calculate the total cost of meals
+    const total_meal_cost = (meal_kid * num_kid) + (meal_adult * num_adult);
+
+    // 
+
+    // Display 
+    const budgetElement = document.getElementById("budget");
+    budgetElement.innerHTML = `Total meal cost: $${total_meal_cost.toFixed(2)}`;
+   
+
+    
+}
+
+</script>
+</body>
+</html>
