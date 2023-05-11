@@ -1,0 +1,65 @@
+.title{
+    color:white;
+    font-family: sans-serif;
+    font-size:30PX;
+    font-weight: bold;
+    padding:2.5%;
+}
+.title:hover{
+    color: black;
+}
+body{
+    padding: 2%;
+}
+main{
+    background-color: #ffa2ca;
+    width: 50%;
+    margin: 0 auto;
+    height:100%;
+    padding:2%;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.stepsofgospel{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width:45%;
+    margin:0 auto;
+    font-size: 12px;
+    font-weight:bolder;
+    line-height:150%;
+    padding: 1%;
+}
+
+.firstquotestart{
+color: white;
+width:45%;
+margin: 0 auto;
+font-size: 10px;
+padding: 1%;
+}
+.firstquoteend{
+    color: white;
+    width:33%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.big_white_quote{
+    color: white;
+    width:33%;
+    margin: 0 auto;
+    font-size: 25px;
+    padding:2%;
+}
+img{
+    width: 18%;
+}
+.last_part{
+    font-family: sans-serif;
+    width:35%;
+    margin: 0 auto;
+    padding:2%;
+    font-size: 11px;
+    font-weight: 500;
+}

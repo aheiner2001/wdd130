@@ -1,0 +1,71 @@
+body{
+    
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 1.8%;
+    box-sizing: border-box;
+    
+}
+main{
+
+    background-color: 
+    rgba(255,162,202,255);
+    width: 50%;
+    margin: 0 auto;
+    height: 90vh;
+    
+
+}
+img{
+width: 17.5%
+
+}
+.title{
+    padding:2%;
+width: fit-content;
+color:white;
+margin: 0 auto;
+font-weight:600;
+}
+.title:hover{
+    color:black;
+}
+.qutoe{
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    font-size: x-small;
+    font-family: serif;
+    
+}
+.steps{
+  position:relative;
+  margin: 0 auto;
+  text-align: left;
+  font-size:x-small;
+  font-weight: bold;
+  line-height: 1.8;
+  width:33%;
+
+    border: solid black;
+}
+.step{
+    position: relative;
+  
+}
+.bigqutoe{
+    font-size:x-large;
+    margin: 0 auto;
+    width: 33%;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+}
+.ending{
+    width: 19%;
+    margin: 0 auto;
+    font-size: small;
+}
