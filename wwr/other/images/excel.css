@@ -1,13 +1,25 @@
 body{
     position: relative;
+    text-align: center;
+}
+h1{
+    top:150px;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: rgb(10, 10, 70);
 }
 .imagecontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     position: relative;
     width: 50%;
     text-align: center;
-    top: 225px;
+    top: 150px;
 }
+
+
 main{
     width: 100%;
 }
@@ -15,4 +27,7 @@ img{
     width: 150px;
     margin: 30px;
     
+}
+img:hover{
+    width: 175px;
 }

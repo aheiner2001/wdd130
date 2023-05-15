@@ -4,6 +4,8 @@
     font-size:30PX;
     font-weight: bold;
     padding:2.5%;
+    width: fit-content;
+    margin: 0 auto;
 }
 .title:hover{
     color: black;
