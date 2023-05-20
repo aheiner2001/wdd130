@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@1,300&display=swap');
-
+body{
+    background-color: white;
+    color: #1e5f8a;
+    font-family:Roboto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
 
 #content{
     max-width: 1600px;
@@ -44,13 +50,7 @@ main section img{
 #logo_link{
     padding-top: 5px;
 }
-body{
-background-color: white;
-color: #1e5f8a;
-font-family:Roboto, Helvetica, sans-serif;
-margin: 0;
-padding: 0;
-}
+
 header{
 background-color: #eb855c;
 color:#1e5f8a;
@@ -97,7 +97,7 @@ footer{
     padding-top: 10px;
 }
 
-.home-title{
+.hometitle{
     color: #1e5f8a;
     font-family: "Castoro Titling";   
      font-size: 2em;
