@@ -1,0 +1,36 @@
+.imagecontainer img{
+width: 65%;
+border-radius: 50%;
+border: solid rgba(65, 62, 62, 0.82) 10px;
+margin: 0 auto;
+
+}
+body{
+    background-color: gray;
+    margin: 0 auto;
+
+}
+
+.imagecontainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    display:grid;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.container{
+    position: relative;
+    width:100%;
+    margin-top: 25px;
+    height:fit-content;
+    margin-bottom: 30px;
+  
+    box-sizing: border-box;
+   
+    grid-area: auto;
+    background-color: gray;
+    text-align: center;
+}
+.circles{
+    width: 100%;
+}

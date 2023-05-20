@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@1,300&display=swap');
+
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +9,13 @@ nav a{
 text-align: center;
 color:#1e5f8a;
 text-decoration: none;
+padding: 35px;
+}
+rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #0c7c59;
 }
 .logo{
     width: 80px;
@@ -25,17 +35,29 @@ color: white;
 main section{
     text-align: center;
 }
+main section img{
+    box-sizing:border-box;
+}
 #background{
     height: 725px;
 }
-
+#logo_link{
+    padding-top: 5px;
+}
 body{
 background-color: white;
 color: #1e5f8a;
+font-family:Roboto, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
 }
 header{
 background-color: #eb855c;
 color:#1e5f8a;
+
+}
+h2 {
+    margin:0;
 }
 nav a:hover{
 background-color: #0c7c59;
@@ -45,6 +67,10 @@ color: white;
     background-color: #eb855c;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top:50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -58,17 +84,24 @@ color: #1e5f8a;
 .msg{
     background-color: #eb855c;
     color: #1e5f8a;  
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
  background-color: #1e5f8a; 
  color: white;  
+ margin-top: 200px;
 }
 .icon{
     width:80px;
+    padding-top: 10px;
 }
 
 .home-title{
     color: #1e5f8a;
+    font-family: "Castoro Titling";   
+     font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: #1e5f8a;
@@ -81,13 +114,20 @@ footer p a:hover {
 }   
 .msg h2{
     color: #1e5f8a;  
+    font-family: "Castoro Titling";
 }
 .msg p{
     color: #1e5f8a;  
+    font-size: .8em;
+    padding: 15px;
 }
 footer a{
 color: white;
 text-decoration: none;
+padding: 25px 50px;
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer a:hover{
 color:#eb855c;
