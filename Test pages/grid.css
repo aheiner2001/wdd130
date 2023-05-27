@@ -1,0 +1,33 @@
+
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    width: 100%;
+    position: absolute;
+}
+.green{
+    background-color: green;
+    grid-column: 1/2;
+    
+}
+.blue{
+    background-color: blue;
+    grid-column: 2/4;
+}
+.red{
+    background-color: red;
+    grid-column: 4/7;
+}
+.yellow{
+    background-color: yellow;
+    grid-column: 1/5;
+}
+.pink{
+    background-color: pink;
+    grid-column: 5/8;
+}
+.orange{
+    background-color: orange;
+    grid-column: 1/2;
+}
