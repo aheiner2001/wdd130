@@ -1,0 +1,115 @@
+
+
+:root   {
+    --primary-color: #0c7c59;
+    --secondary-color: #1e5f8a;
+    --accent1-color: #eb855c;
+    --accent2-color: white;
+
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+}
+.container{
+   width: 100%;
+   display: grid;
+   grid-template-columns:1fr 1fr ;
+   grid-template-rows: 1fr 1fr 1fr;
+   height: 600px;
+}
+.container img{
+   
+width: 350px;
+grid-row: 2/3;
+
+display: block; /* Ensures the image is a block-level element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto;
+
+ 
+}
+header{
+background-color: var(--primary-color);
+height: 75px;
+}
+footer{
+background-color: var(--secondary-color);
+height: 150px;
+width: 100%;
+align-items: center;
+}
+main{
+width: 100%;
+background-color: var(--accent2-color);
+
+}
+.thewhat{
+    width: 75%;
+    grid-column: 2/3;
+    height: 300px;
+    margin: 0 auto;
+    grid-row: 2/3;
+    background: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 25px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+align-items: center;
+text-align: center;
+
+justify-content: center;
+
+
+
+
+}
+.Schedule{
+    color:var(--secondary-color);
+}
+
+nav a{
+  
+  width: 50%;
+justify-self: center;
+    background-color: #eb855c;
+    padding: 10px;
+    margin: 7.5px;
+   font-family:cursive;
+
+   color: var(--accent2-color);
+text-decoration: none;
+font-size: 25px;
+
+}
+nav a:hover{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+.herocontainer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    
+}
+img{
+    width: 100%;
+}
+.title{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: var(--accent1-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+h1:hover{
+    color: var(--accent2-color);
+}
