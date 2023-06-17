@@ -19,6 +19,15 @@ body{
    grid-template-rows: 1fr 1fr 1fr;
    height: 600px;
 }
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+
+}
+.hero-grid img{
+    width: 100%;
+}
 .container img{
    
 width: 350px;
