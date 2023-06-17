@@ -45,23 +45,6 @@ rivers-card, .camping-card, .rapids-card{
 
 }
 
-.image1:hover{
-    z-index: -2;
-}
-
-.image1{
- grid-column:1/2;
- grid-row: 1/2;
-}
-.image2{
-grid-column: 3/4;
-}
-.image3{
-grid-column:2/3 ;
-}
-.image4{
-grid-column:4/5 ;
-}
 
 
 
