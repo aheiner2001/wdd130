@@ -28,6 +28,7 @@ Fonts are separated by a | */
   --nav-background-color: #D4AC0D;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
+ grid-column: ;
 }
 
 
@@ -39,6 +40,7 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  
 }
 img {
   display: block;

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #a8dadc   ;
+  --secondary-color: #3D7068 ;
+  --accent1-color: #E63946;
+  --accent2-color: #F1FAEE;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto Mono', monospace;
+  --paragraph-font: Georgia, 'Times New Roman', Times, serif;
+ 
+  
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.sqaureimg{
+  grid-column: 1/11;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+footer{
+  width:100%;
+  height: 100px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.tennis{
+    grid-column: 1/11;
+    grid-row: 1/2;
+    width: 100%;
+    height: 350px;
+}
+.court{
+    grid-column:5/7 ;
+    grid-row: 3/4;
+    width: 100%;
+    height: 300px;
+}
+.cool{
+  width: 100%;
+  height: 300px;
+  grid-column:2/4 ;
+  grid-row: 3/4;
+}
+.Pickleballguy{
+  grid-column:8/10;
+  grid-row: 3/4;
+  width: 100%;
+  height: 300px;
+}
+.information{
+    grid-row: 5/6;
+    grid-column: 2/10;
+    text-align: center;
+}
+
+.title{
+    grid-column: 5/7;
+    font-size: 30px;
+    grid-row: 2/3;
+    font-family: 'Roboto Mono';
+    font-size: 45px;
+
+}
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Roboto Mono';
+  }
+  nav  {
+    list-style-type: none;
+    display: flex;
+  
+  }
+  
+  nav a {
+    padding:1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+  
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+  header {
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+  }
