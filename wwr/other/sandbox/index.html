@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>CSS + HTML only Rubik's Cube, by @pixelbart</title>
+		<style type="text/css">
+			:root {
+				--backgroundColor: #BBBBBB;
+				--foregroundColor: #444444;
+				--contentBackgroundColor: #DDDDDD;
+				--borderColor: #8888AA;
+				--itemBackgroundColor: #E4E4FF;
+			}
+
+			body {
+				background: var(--backgroundColor);
+				color: var(--foregroundColor);
+				font-family: sans-serif;
+			}
+
+			a, a:active, a:visited {
+				color: var(--foregroundColor);
+			}
+
+			h1 
+			{
+				font-size: 3rem;
+				text-align: center;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			h2
+			{
+				font-size: 1.5rem;
+				text-align: left;
+				margin-top: 0.2rem;
+				margin-left: 0rem;
+				margin-bottom: 0.5rem;
+			}
+
+			#content
+			{
+				width: 40rem;
+				margin: auto;
+				padding: 0.2rem;
+				background: var(--contentBackgroundColor);
+				border-width: 0.1rem;
+				border-style: solid;
+				border-color: var(--borderColor);
+				box-sizing: border-box;
+			}
+
+			.item
+			{
+				margin: 0.4rem;
+				padding: 0.5rem;
+				border-width: 0.1rem;
+				border-style: solid;
+				border-color: var(--borderColor);
+				background-color: var(--itemBackgroundColor);
+				font-size: 1rem;
+			}
+
+			.item .csscube-container {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: 0px;
+			}
+
+			iframe {
+				resize: both;
+				overflow: auto;
+				flex-grow: 1;
+				flex-shrink: 1;
+				width: 100%;
+			}
+
+			.flexie {
+				width: 24em;
+				height: 32em;
+				margin: auto;
+				display: flex;
+				overflow: hidden;
+				resize: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<h1>csscube by @pixelbart</h1>
+			<p align="center">100% css+html</p>
+			<div class="item">
+				<h2>Rotate preview with hover and touch support</h2>
+				<div class="flexie">
+					<!-- allow-scripts because Mobile Safari needs ontouchstart="" to let ":active"-triggers fire on touch screens... -->
+					<iframe class="csscube-container" src="rotate/R.html" scrolling="no" sandbox="allow-scripts"></iframe>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Animated cube</h2>
+				<iframe class="csscube-container" src="demo.html" scrolling="no"></iframe>
+			</div>
+			<div class="item">
+				<p> <a href="https://github.com/pixelbart80/csscube/"/>GitHub project</a></p>
+			</div>
+		</div>
+	</body>
+</html>

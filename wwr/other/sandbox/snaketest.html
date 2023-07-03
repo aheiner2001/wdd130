@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curved River Grid</title>
+  <style>
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+    }
+
+    .box {
+      flex: 0 0 25%;
+      height: 100px;
+      background-color: lightblue;
+    }
+
+    .type-a {
+      background-color: orange;
+    }
+
+    .type-b {
+      background-color: yellow;
+    }
+
+    .type-c {
+      background-color: pink;
+    }
+
+    .type-d {
+      background-color: purple;
+    }
+
+    .curved {
+      transform: translateY(50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box type-a"></div>
+    <div class="box type-b"></div>
+    <div class="box type-c curved"></div>
+    <div class="box type-d curved"></div>
+    <div class="box type-a curved"></div>
+    <div class="box type-b"></div>
+    <div class="box type-c"></div>
+    <div class="box type-d"></div>
+  </div>
+</body>
+</html>
