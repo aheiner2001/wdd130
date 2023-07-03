@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <link rel="stylesheet" href="verticaltabs.css">
+</head>
+<body>
+ 
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" >Paddle</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Ball</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Clothing</button>
+      </div>
+      
+      <div id="London" class="tabcontent" >
+        <h3>Paddle</h3>
+        <p>A pickleball paddle is a specialized racquet used in the sport of pickleball. It has a flat surface, handle, and is made of lightweight materials like wood or composite materials. The paddle is designed to provide control, accuracy, and power when hitting the plastic ball in pickleball.</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent" style="display: none;">
+        <h3>Ball</h3>
+        <p>The pickleball is a small plastic ball used in the sport of pickleball. It is specifically designed for this racquet sport, which combines elements of tennis, badminton, and ping pong.
+
+            Pickleballs are made of durable plastic and have perforated holes on their surface. These holes help to reduce the ball's speed and improve control during gameplay. The ball is slightly smaller than a tennis ball, allowing for quick and precise shots.
+            
+            Overall, the pickleball is a small, perforated plastic ball designed for the unique demands of pickleball, providing players with control and maneuverability on the court.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent" style="display: none;">
+        <h3>Clothing</h3>
+        <p>For pickleball, it is recommended to wear comfortable and breathable athletic attire, such as moisture-wicking shirts and shorts/skirts that allow for a wide range of movement. Choose court-specific shoes for stability and grip. Consider wearing a hat/visor and sunglasses for sun protection.</p>
+      </div>
+      
+      <script>
+        function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+
+        document.getElementById("defaultOpen").click();
+      }
+    </script>
+</body>
+
+
+</html>
