@@ -84,6 +84,8 @@ footer{
   grid-column:2/10 ;
   display:grid;
   grid-template-columns: 1fr 1fr;
+  font-family: Georgia;
+  
 }
 .rules img{
   width: 75%;
