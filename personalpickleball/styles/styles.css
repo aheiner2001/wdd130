@@ -190,7 +190,7 @@ nav {
     display: flex;
   
   }
-  
+  /* why isn't it working? */
   nav a {
     padding:1em;
     min-width: 120px;
